@@ -1,0 +1,10 @@
+I need to ignore the first few bits. So I need a script to put it into a txt take the first few bits, ignore the first 20 or so bits, and transform the rest. OR, easier, I need it to shift only ALPHABET characters.
+
+Block 0 - 7F should be ignored -> 46 is save.
+
+
+Make it into a Vigenere, custom key and source: there are two variables, one is ME one is THE OTHER.
+
+Ignore first 30 bits.
+
+In the end, it was not that easy. It takes more than 30 bits, the lines are in the 50s. Sometimes, a header is only the beginning.
