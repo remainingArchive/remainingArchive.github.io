@@ -1,0 +1,51 @@
+    body{
+        background-color: chartreuse;
+    }
+
+
+    h2{
+        color: blue;
+    }
+    
+    @keyframes infiniteScroll {
+        from {transform: translateX(0)}
+        to {transform: translateX(-50%)}
+    }
+    .container {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .horizontal-scrolling-items {
+        display: flex;
+        width: 100vw;
+        animation-name: infiniteScroll;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    .horizontal-scrolling-items__item {
+        white-space: nowrap;
+    }
+
+    .container_stream{
+        outline-style: groove;
+        outline-width: 10px;
+        outline-color: aliceblue;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .stream{
+        margin: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .material{
+        display: flex;
+    }
+
+    .textme{
+        padding-left: 20px;
+        padding-right: 20px;
+    }

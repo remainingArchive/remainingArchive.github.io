@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>hotAMATEURS.com</title>
+    <style>
+            body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .login-box {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .login-box input,
+    .login-box button {
+        margin: 10px 0;
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .error {
+        color: red;
+        font-size: 14px;
+        display: none;
+    }
+    </style>
+
+</head>
+<body>
+
+
+    <div class="login-box">
+        <h1>hotAMATEURS.com</h1>
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="validatePassword()">Login</button>
+        <p id="error" class="error">Incorrect password!</p>
+    </div>
+
+    <script>
+        function validatePassword() {
+            const password = document.getElementById('password').value;
+            const passwordMap = {
+                'professional': 'professional.html',
+                'page2password': 'page2.html',
+                'page3password': 'page3.html',
+                'page4password': 'page4.html',
+            };
+
+            if (passwordMap[password]) {
+                window.location.href = passwordMap[password];
+            } else {
+                document.getElementById('error').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
