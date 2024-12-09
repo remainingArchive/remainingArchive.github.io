@@ -6,12 +6,11 @@
     <link rel="stylesheet" href="main.css">
     <title>hotAMATEURS.com</title>
     <style>
-            body {
+            .flex {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        margin: 0;
+        margin: 10vh;
     }
     
     .login-box {
@@ -39,22 +38,25 @@
 </head>
 <body>
 
+    <img class="amateurLogo" src="./media/amateurONLINEnormal.png" width="100vw" height="auto">
 
-    <div class="login-box">
-        <h1>hotAMATEURS.com</h1>
-        <input type="password" id="password" placeholder="Password">
-        <button onclick="validatePassword()">Login</button>
-        <p id="error" class="error">Incorrect password!</p>
+    <div class="flex">
+        <div class="login-box">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="validatePassword()">Login</button>
+            <p id="error" class="error">Incorrect password!</p>
+        </div>
+    
     </div>
 
     <script>
         function validatePassword() {
             const password = document.getElementById('password').value;
             const passwordMap = {
-                'professional': 'professional.html',
-                'page2password': 'page2.html',
-                'page3password': 'page3.html',
-                'page4password': 'page4.html',
+                'red': 'professional.html',
+                'blue': 'connoisseur.html',
+                'black': 'outsider.html',
+                'yellow': 'page4.html',
             };
 
             if (passwordMap[password]) {

@@ -1,12 +1,13 @@
     body{
-        background-color: chartreuse;
+        background-color: white;
     }
 
 
     h2{
         color: blue;
     }
-    
+
+
     @keyframes infiniteScroll {
         from {transform: translateX(0)}
         to {transform: translateX(-50%)}
